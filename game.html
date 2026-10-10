@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>数当てゲーム</title>
+    <link href="styles/game.css" rel="stylesheet" type="text/css">
+    <script async src="scripts/game.js"></script>
+  </head>
+  <body>
+    <h1>数当てゲーム</h1>
+    <p>
+      指定された 1 から 100 までの間のランダムな数値を選びました。10 回以内でその数値を当てられるか試してみてください。答えが「大きすぎる」か「小さすぎる」かは、その都度お知らせします。
+    </p>
+    <!-- 予想入力・送信 -->
+    <div class="form">
+      <label for="guessField">予想を入力: </label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        required
+        id="guessField"
+        class="guessField" />
+      <input type="submit" value="予想を送信" class="guessSubmit" />
+    </div>
+    <!-- 結果表示 -->
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </body>
+</html>
