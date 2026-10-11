@@ -189,3 +189,19 @@ function parentFunc() {
   }
   return nestedFunc(); // 5
 }
+
+
+// No.10-クラス
+class Person {
+  // インスタンス（クラスを使って作られたオブジェクト）の初期設定
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    return `Hello, I'm ${this.name}!`;
+  }
+}
+
+// インスタンス化
+const p = new Person("Maria");
+console.log(p.sayHello()); // Hello, I'm Maria!
